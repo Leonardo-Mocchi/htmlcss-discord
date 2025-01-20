@@ -85,83 +85,6 @@ s .sparkly {
     color: var(--ds-blurple);
 }
 
-.debug {
-
-    /*  * {
-        border: 2px dashed black;
-        font-size: 18px;
-        color: black;
-    } */
-
-    /*  header {
-        background-color: var(--debug-header-bg);
-    }
- */
-    /*    #navigation {
-        background-color: var(--debug-navigation-bg);
-    }
- */
-    /* #jumbotron {
-        background-color: var(--debug-jumbotron-bg);
-    }
- */
-    /* #jumbo_center {
-        background-color: var(--debug-jumbotron-section);
-    } */
-
-    /* main {
-        background-color: white;
-    } */
-
-    /* #technology {
-        background-color: var(--debug-section3);
-    }
- */
-    /*  .main_bg_darker {
-        background-color: red;
-    } */
-
-    /*  .main_bg_lighter {
-        background-color: var(white);
-    } */
-
-    /*   .main_pic {
-        background-color: var(--debug-section1);
-    }
-
-    .main_text {
-        background-color: var(--debug-section2);
-    }
- */
-    /* .main_alt2 {
-        background-color: var(--debug-section3);
-    } */
-
-
-
-    /*  #footer_links {
-        background-color: var(--ds-bg);
-    } */
-
-    /* #social {
-        background-color: var(--debug-footer-left-column);
-    } */
-
-    /* .site_map {
-        background-color: var(--debug-footer-columns);
-        border: unset;
-        border: 2px dashed white;
-    }
- */
-    /* #button_section {
-        background-color: var(--debug-footer-logo-bg);
-    } */
-
-    /* .footer_button {
-        background-color: var(--debug-footer-logo-section);
-    } */
-}
-
 header {
     background-color: var(--ds-bg-header);
     padding-top: 1.75rem;
@@ -375,7 +298,6 @@ footer {
         }
 
         .site_map {
-
             width: 17.5%;
 
             ul {
@@ -385,32 +307,28 @@ footer {
         }
 
     }
-}
 
-
-
-.separator {
-    border: unset;
-    margin-top: 2rem;
-    margin-bottom: 1.25rem;
-    height: 1px;
-    background-color: var(--ds-bg);
-}
-
-#button_section {
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 0;
-
-    .button {
-        background-color: var(--ds-blurple);
+    .separator {
+        border: unset;
+        margin-top: 2rem;
+        margin-bottom: 1.25rem;
+        height: 1px;
+        background-color: var(--ds-bg);
     }
-}
+
+    #button_section {
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+
+        .button {
+            background-color: var(--ds-blurple);
+        }
+    }
 
 }
-
 
 /* /footer */
