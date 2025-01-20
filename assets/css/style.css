@@ -24,16 +24,28 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--ds-dark);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.align {
+    width: 68%;
+    margin: 1rem 16%;
+}
+
+.button {
+    text-align: center;
+    border-radius: 3rem;
+    padding: 0.75rem 1rem;
 }
 
 .debug {
 
-    * {
+    /*  * {
         border: 2px dashed black;
         font-size: 18px;
         color: black;
-    }
+    } */
 
     /*  header {
         background-color: var(--debug-header-bg);
@@ -43,9 +55,13 @@
         background-color: var(--debug-navigation-bg);
     }
  */
-    #jumbotron {
+    /* #jumbotron {
         background-color: var(--debug-jumbotron-bg);
     }
+ */
+    /* #jumbo_center {
+        background-color: var(--debug-jumbotron-section);
+    } */
 
     main {
         background-color: white;
@@ -139,42 +155,68 @@ header {
 
         .login_button {
             background-color: var(--ds-bg);
-            text-align: center;
-            border-radius: 3rem;
-            padding: 0.75rem 1rem;
         }
     }
 
     #jumbotron {
-        height: 500px;
+        background-color: var(--ds-bg);
+        background-image: url(../img/jumbo.png);
+        height: fit-content;
+        background-size: 100%;
+        background-repeat: no-repeat;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 
         #jumbo_center {
-            background-color: var(--debug-jumbotron-section);
-            min-width: 50%;
-            min-height: 80%;
+            color: var(--ds-light);
+            width: 45%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                color: var(--ds-light);
+                font-size: 48px;
+                padding-bottom: 2rem;
+            }
+
+            .description {
+                font-weight: normal;
+                text-align: center;
+                font-size: 20px;
+                padding-bottom: 1rem;
+            }
+
+        }
+
+        .title,
+        .description,
+        .open_in_browser {
+            color: var(--ds-light);
+        }
+
+
+        #download_buttons {
+            padding-bottom: 5rem;
+
+            .mac_download {
+                background-color: var(--ds-bg);
+            }
+
+            .open_in_browser {
+                background-color: var(--ds-dark);
+            }
         }
     }
 }
 
-footer {
-    height: 740px;
-}
-
-.align {
-    width: 68%;
-    margin: 1rem 16%;
-
-}
-
-/* header */
-
-
 /* /header */
 
-#invite_only,
+main #invite_only,
 #community,
 #fandom,
 #technology {
@@ -198,38 +240,46 @@ footer {
 
 /* /main */
 
-#footer_links {
-    display: flex;
-    flex-direction: row;
-    height: 580px;
+
+footer {
+    height: 740px;
+
+    #footer_links {
+        display: flex;
+        flex-direction: row;
+        height: 580px;
+    }
+
+    #social {
+        width: 30%;
+    }
+
+    .site_map {
+        width: 17.5%;
+    }
+
+    .separator {
+        border: unset;
+        margin-top: 2rem;
+        margin-bottom: 1.25rem;
+        height: 1px;
+        background-color: var(--ds-bg);
+    }
+
+    #footest {
+        justify-content: end;
+        margin-bottom: unset;
+    }
+
+    #button_section {
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
 }
 
-#social {
-    width: 30%;
-}
-
-.site_map {
-    width: 17.5%;
-}
-
-.separator {
-    border: unset;
-    margin-top: 2rem;
-    margin-bottom: 1.25rem;
-    height: 1px;
-    background-color: var(--ds-bg);
-}
-
-#footest {
-    justify-content: end;
-    margin-bottom: unset;
-}
-
-#button_section {
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 0;
-}
+/* /footer */
