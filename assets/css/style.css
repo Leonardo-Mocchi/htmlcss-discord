@@ -1,0 +1,235 @@
+:root {
+    --ds-dark: #23272a;
+    --ds-bg: white;
+    --ds-light: white;
+    --ds-bg-header: #3161e0;
+    --ds-bg-footer: #23272a;
+    --ds-bg-altdarker: #f6f6f6;
+    --debug-header-bg: #add8e6;
+    --debug-navigation-bg: #d6a630;
+    --debug-jumbotron-bg: #00008b;
+    --debug-jumbotron-section: #ee82ee;
+    --debug-section1: #1e90ff;
+    --debug-section2: #ffc0cb;
+    --debug-section3: #228b22;
+    --debug-footer-bg: #23272a;
+    --debug-footer-left-column: #f08080;
+    --debug-footer-columns: #20b2aa;
+    --debug-footer-logo-bg: #7fffd4;
+    --debug-footer-logo-section: #feb5c0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--ds-dark);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.debug {
+
+    * {
+        border: 2px dashed black;
+        font-size: 18px;
+        color: black;
+    }
+
+    /*  header {
+        background-color: var(--debug-header-bg);
+    }
+ */
+    /*    #navigation {
+        background-color: var(--debug-navigation-bg);
+    }
+ */
+    #jumbotron {
+        background-color: var(--debug-jumbotron-bg);
+    }
+
+    main {
+        background-color: white;
+    }
+
+    #technology {
+        background-color: var(--debug-section3);
+    }
+
+    .main_bg_darker {
+        background-color: var(--ds-bg-altdarker);
+    }
+
+    .main_bg_lighter {
+        background-color: var(white);
+    }
+
+    .main_pic {
+        background-color: var(--debug-section1);
+    }
+
+    .main_text {
+        background-color: var(--debug-section2);
+    }
+
+    .main_alt2 {
+        background-color: var(--debug-section3);
+    }
+
+    footer {
+        background-color: var(--debug-footer-bg);
+    }
+
+    #footer_links {
+        background-color: var(--ds-bg);
+    }
+
+    #social {
+        background-color: var(--debug-footer-left-column);
+    }
+
+    .site_map {
+        background-color: var(--debug-footer-columns);
+        border: unset;
+        border: 2px dashed white;
+    }
+
+    #button_section {
+        background-color: var(--debug-footer-logo-bg);
+    }
+
+    .footer_button {
+        background-color: var(--debug-footer-logo-section);
+    }
+}
+
+header {
+    background-color: var(--ds-bg-header);
+    padding-top: 1.75rem;
+
+    #navigation {
+        display: flex;
+        align-items: center;
+        color: var(--ds-light);
+
+        #logo {
+            width: 20%;
+        }
+
+        #home {
+            width: 60%;
+        }
+
+        #home_buttons {
+            list-style-type: none;
+            margin: 0;
+            padding: 0 10%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .home_b {
+            color: var(--ds-light);
+            text-wrap: nowrap;
+        }
+
+        #login {
+            width: 20%;
+            text-align: end;
+        }
+
+        .login_button {
+            background-color: var(--ds-bg);
+            text-align: center;
+            border-radius: 3rem;
+            padding: 0.75rem 1rem;
+        }
+    }
+
+    #jumbotron {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #jumbo_center {
+            background-color: var(--debug-jumbotron-section);
+            min-width: 50%;
+            min-height: 80%;
+        }
+    }
+}
+
+footer {
+    height: 740px;
+}
+
+.align {
+    width: 68%;
+    margin: 1rem 16%;
+
+}
+
+/* header */
+
+
+/* /header */
+
+#invite_only,
+#community,
+#fandom,
+#technology {
+    display: flex;
+    height: 500px;
+}
+
+.main_pic {
+    height: 500px;
+    width: 60%;
+}
+
+.main_text {
+    height: 500px;
+    width: 40%;
+}
+
+#community {
+    flex-direction: row-reverse;
+}
+
+/* /main */
+
+#footer_links {
+    display: flex;
+    flex-direction: row;
+    height: 580px;
+}
+
+#social {
+    width: 30%;
+}
+
+.site_map {
+    width: 17.5%;
+}
+
+.separator {
+    border: unset;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    height: 1px;
+    background-color: var(--ds-bg);
+}
+
+#footest {
+    justify-content: end;
+    margin-bottom: unset;
+}
+
+#button_section {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0;
+}
