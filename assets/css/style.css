@@ -31,8 +31,7 @@
 
 .main_bg_darker {
     background-color: var(--ds-bg-altdarker);
-    background-image: url(../img/wave.svg);
-    background-repeat: no-repeat;
+    /* margin-top: -0.5rem; */
 }
 
 .align {
@@ -59,7 +58,23 @@ h1 {
     padding-bottom: 2rem;
 }
 
-.sparkly {
+.dark_wave {
+    margin-bottom: -0.5rem;
+    filter: invert(99%) sepia(33%) saturate(10%) hue-rotate(173deg) brightness(114%) contrast(93%);
+}
+
+.light_wave {
+    margin-top: -7rem;
+    margin-bottom: -0.5rem;
+    filter: invert(97%) sepia(6%) saturate(642%) hue-rotate(56deg) brightness(123%) contrast(100%);
+}
+
+
+
+
+
+
+s .sparkly {
     height: 100px;
     background-image: url(../img/stars.svg);
     background-repeat: no-repeat;
@@ -100,6 +115,9 @@ h1 {
         background-color: var(--debug-section3);
     }
  */
+    /*  .main_bg_darker {
+        background-color: red;
+    } */
 
     .main_bg_lighter {
         background-color: var(white);
@@ -246,8 +264,9 @@ main {
     #technology {
         display: flex;
         height: fit-content;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 0;
     }
 
     .main_pic {
@@ -267,6 +286,8 @@ main {
 
     #community {
         flex-direction: row-reverse;
+        padding-top: 0;
+        padding-bottom: 6rem;
 
         .main_text {
             padding-right: 3rem;
@@ -275,13 +296,15 @@ main {
 
     #fandom,
     #invite_only {
+        padding-top: 2rem;
+
         .main_text {
             padding-left: 3rem;
         }
     }
 
     #technology {
-        padding-top: 5rem;
+        padding-top: 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
