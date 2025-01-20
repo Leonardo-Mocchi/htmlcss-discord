@@ -5,6 +5,7 @@
     --ds-bg-header: #3161e0;
     --ds-bg-footer: #23272a;
     --ds-bg-altdarker: #f6f6f6;
+    --ds-blurple: #8ea1e1;
     --debug-header-bg: #add8e6;
     --debug-navigation-bg: #d6a630;
     --debug-jumbotron-bg: #00008b;
@@ -26,6 +27,10 @@
     color: var(--ds-dark);
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: bold;
+}
+
+.main_bg_darker {
+    background-color: var(--ds-bg-altdarker);
 }
 
 .align {
@@ -50,6 +55,15 @@ p {
 h1 {
     font-size: 48px;
     padding-bottom: 2rem;
+}
+
+.sparkly {
+    height: 100px;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
 }
 
 .debug {
@@ -80,13 +94,10 @@ h1 {
         background-color: white;
     }
 
-    #technology {
+    /* #technology {
         background-color: var(--debug-section3);
     }
-
-    .main_bg_darker {
-        background-color: var(--ds-bg-altdarker);
-    }
+ */
 
     .main_bg_lighter {
         background-color: var(white);
@@ -232,7 +243,9 @@ main {
     #fandom,
     #technology {
         display: flex;
-        height: 500px;
+        height: fit-content;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .main_pic {
@@ -250,16 +263,53 @@ main {
         justify-content: center;
     }
 
-    #invite_only {}
-
-
     #community {
         flex-direction: row-reverse;
+
+        .main_text {
+            padding-right: 3rem;
+        }
     }
 
-    #fandom {}
+    #fandom,
+    #invite_only {
+        .main_text {
+            padding-left: 3rem;
+        }
+    }
 
-    #technology {}
+    #technology {
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #tech_text {
+        margin-top: 5rem;
+    }
+
+    #ready4download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 10rem;
+        margin-top: 0;
+
+        .sparkly {
+            padding: 5rem;
+            font-size: 32px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .button {
+            color: var(--ds-light);
+            background-color: var(--ds-blurple);
+        }
+    }
 }
 
 
