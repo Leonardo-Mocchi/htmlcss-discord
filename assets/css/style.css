@@ -20,6 +20,8 @@
     --debug-footer-logo-section: #feb5c0;
 }
 
+/* utility */
+
 * {
     margin: 0;
     padding: 0;
@@ -84,6 +86,8 @@ s .sparkly {
 .blurple {
     color: var(--ds-blurple);
 }
+
+/* /utility */
 
 header {
     background-color: var(--ds-bg-header);
@@ -196,7 +200,16 @@ main {
         height: 500px;
         width: 60%;
         display: flex;
+
+        #io_pic,
+        #c_pic,
+        #f_pic,
+        #t_pic {
+            max-width: 100%;
+        }
     }
+
+
 
     .main_text {
         height: 500px;
